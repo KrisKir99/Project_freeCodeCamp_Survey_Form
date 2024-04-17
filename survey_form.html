@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Форма опроса freeCodeCamp</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <h1 id="title">Форма опроса freeCodeCamp</h1>
+        <p id="description">Спасибо, что нашли время помочь нам улучшить платформу</p>
+        <form id="survey-form" method="post" action='https://survey-form'>
+                <fieldset>
+                        <label for="name" id="name-label">Имя <input id="name" name="name" type="text" required
+                                        placeholder="Введите своё имя"></label>
+                        <label for="email" id="email-label">Отправить по электронной почте <input id="email"
+                                        name="email" type="email" required
+                                        placeholder="Введите свой адрес электронной почты"></label>
+                        <label for="age" id="number-label">Возраст <span>(необязательно)</span> <input id="number"
+                                        name="number" type="number" min="13" max="120" placeholder="Возраст"></label>
+                </fieldset>
+                <fieldset>
+                        <label for="referer">Какой вариант лучше всего описывает вашу нынешнюю должность?
+                                <select id="dropdown" name="dropdown">
+                                        <option value="">Выберите текущую роль</option>
+                                        <option value="1">Студент</option>
+                                        <option value="2">Работа с полной занятостью</option>
+                                        <option value="3">Очная форма обучения</option>
+                                        <option value="4">Предпочитаю не говорить</option>
+                                        <option value="5">Другой</option>
+                                </select>
+                        </label>
+                </fieldset>
+                <fieldset>
+                        Вы бы порекомендовали freeCodeCamp другу?
+                        <label for="1recommend"><input id="1recommend" type="radio" name="recommend" checked
+                                        class="inline" value="1recommend"> Определенно </label>
+                        <label for="2recommend"><input id="2recommend" type="radio" name="recommend" class="inline"
+                                        value="2recommend"> Может быть</label>
+                        <label for="3recommend"><input id="3recommend" type="radio" name="recommend" class="inline"
+                                        value="recommend"> Не уверен</label>
+                </fieldset>
+                <fieldset>
+                        <label for="function">Какая ваша любимая функция freeCodeCamp?
+                                <select id="function" name="function">
+                                        <option value="">Выберите один из вариантов</option>
+                                        <option value="1">Проблемы</option>
+                                        <option value="2">Проекты</option>
+                                        <option value="3">Сообщество</option>
+                                        <option value="4">Открытый исходный код</option>
+                                </select>
+                        </label>
+                </fieldset>
+                <fieldset>
+                        <label for="wishes">Что бы вы хотели улучшить? <span>(Отметьте все подходящие варианты)</span>
+                        </label>
+
+                        <label for="fronted-project"><input id="fronted-project" type="checkbox" name="personality"
+                                        value="fronted-project" class="inline">Фронтенд-проекты</label>
+
+                        <label for="backend-project"><input id="backend-project" type="checkbox" name="personality"
+                                        value="backend-project" class="inline">Back-end проекты</label>
+
+                        <label for="visial"><input id="visual" type="checkbox" name="personality" value="visial"
+                                        class="inline">Визуализация данных</label>
+
+                        <label for="problems"><input id="problems" type="checkbox" name="personality" value="problems"
+                                        class="inline">Проблемы</label>
+
+                        <label for="community"><input id="community" type="checkbox" name="personality"
+                                        value="community" class="inline">Сообщество разработчиков ПО с открытым исходным
+                                кодом</label>
+
+                        <label for="gitter"><input id="gitter" type="checkbox" name="personality" value="gitter"
+                                        class="inline">Справочные комнаты Gitter</label>
+
+                        <label for="video"> <input id="video" type="checkbox" name="personality" value="video"
+                                        class="inline">Видео</label>
+
+
+                        <label for="townmeet"><input id="townmeet" type="checkbox" name="personality" value="townmeet"
+                                        class="inline">Городские встречи</label>
+
+
+                        <label for="viki"><input id="viki" type="checkbox" name="personality" value="viki"
+                                        class="inline">Вики</label>
+
+                        <label for="forum"><input id="forum" type="checkbox" name="personality" value="forum"
+                                        class="inline">Форум</label>
+
+                        <label for="curses"><input id="curses" type="checkbox" name="personality" value="curses"
+                                        class="inline">Дополнительные курсы</label>
+                </fieldset>
+                <fieldset>
+                        <label for="comments">Есть замечания или предложения?
+                                <textarea class="comments" id="comments" type="comments" name="comments" rows="5"
+                                        cols="30" placeholder="Введите свой комментарий здесь..."></textarea>
+                </fieldset>
+                <input id="submit" type="submit" value="Отправить">
+        </form>
+</body>
+
+</html>
